@@ -415,13 +415,210 @@
 
 //! 43. What is the length of the array after deletion
 
-let arr = ['a', 'b', 'c', 'd', 'f']
-delete arr[2];
-console.log(arr.length);//5
+// let arr = ['a', 'b', 'c', 'd', 'f']
+// delete arr[2];
+// console.log(arr.length);//5
  
+//! 44. What is the way to get the status of a checkbox
 
+// function getStatus() {
+//     if (document.getElementById("chkbox").checked) {
+//       console.log("Checkbox is checked");
+//     } else {
+//       console.log("CheckBox is unchecked");
+//     }
+// }
 
+//! 45 Is it possible to write a multiline string in javascript
 
+// let str = `Hello
+
+// Hai`
+// console.log(str);//! Using the backticks
+
+// let str = 'Hello';
+// str = str + "Hai";
+// console.log(str)//! Using the string
+
+//! 46 How to find the minimum value in numbered array
+
+// let numbers = [10, 20, 30, 5, 23];
+
+// function findMinimum(arr) {
+//     return arr.reduce(function (p, l) {
+//         return (p < l ? p : l);
+//     })
+// }
+// console.log(findMinimum(numbers));
+
+//! 47. How to find the average of the numbers in the numbered array
+
+// let number = [10, 20, 30, 40, 50];
+
+// let avgValue = number.reduce((p, l) => p + l);
+// let arraylength = number.length
+// console.log(arraylength)//5
+// console.log(avgValue)//150
+// console.log(avgValue/arraylength);//30
+
+//! 48. How can you uppercase the first character in a string array
+
+// let array = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+// let updateArray=[]
+// for (let day of array) {
+//     day = day.charAt(0).toUpperCase() + day.substring(1);
+//     updateArray.push(day);
+// }
+// console.log(updateArray);
+
+//! 49. How to make sentence out of a given array
+
+// let array = [
+//   "sunday",
+//   "monday",
+//   "tuesday",
+//   "wednesday",
+//   "thursday",
+//   "friday",
+//   "saturday",
+// ];
+
+// // let joinArray = array.join("");
+// // console.log(joinArray);//sundaymondaytuesdaywednesdaythursdayfridaysaturday
+
+// let joinArray = array.join(" ");
+// console.log(joinArray);//sunday monday tuesday wednesday thursday friday saturday
+
+//! 50.How to check if n array contains any element of another array.
+
+// let arr1 = [10, 20, 30, 40];
+// let arr2 = [10, 22, 33, 44];
+// let result = arr1.some(ele => arr2.includes(ele));
+// console.log(result);//true
+
+//! 51.Given two strings how can you check if the strings are anagram for each other
+
+// let str1 = "Army";
+// let str2 = "mary";
+
+// function checkAnagram(str1, str2) {
+//     var a = str1.toLowerCase();
+//     var b = str2.toLowerCase();
+
+//     a = a.split("").sort().join("");
+//     b = b.split("").sort().join("");
+
+//     return a === b;
+// }
+// console.log(checkAnagram(str1, str2));
+
+//! or===========
+
+// let str1 = prompt("Enter the name");
+// let str2 = prompt("Enter the name2");
+
+// [...str1].sort().join("") === [...str2].sort().join("") ? console.log(true) : console.log(false);
+
+//! 52.How can you extract a few fields from the given JSON object and form a new array.
+
+// let input = {
+//   students: [
+//     { name: "Manu", id: 12, email: "manu@gmail.com" },
+//     { name: "Madappa", id: 13, email: "madappa@gmail.com" },
+//     { name: "Anil", id: 14, email: "anil@gmail.com" },
+//   ],
+// };
+
+// let output = input.students.map(function (item) {
+//     let stuObj = {
+//         name: item.name,
+//         email: item.email,
+//         id:item.id,
+//     }
+//     return stuObj;
+// })
+// console.log(output);
+
+//! 53. Filter a given object based on certain conditions and return the corresponding object ?
+
+// let input = {
+//   students: [
+//     { name: "Manu", id: 12, email: "manu@gmail.com" },
+//     { name: "Madappa", id: 13, email: "madappa@gmail.com" },
+//     { name: "Anil", id: 14, email: "anil@gmail.com" },
+//   ],
+// };
+
+// let output = input.students.filter(function (item) {
+//     return item.id > 12 ? item : "";
+// })
+// console.log(output);
+
+//! 54. How to check if the variable passed is an Array or not.
+
+// let list = [10, 20, 30, 40]
+// console.log(Array.isArray(list));//true
+
+//! 55.Given an array of strings reverse split and join to reverse each word in the sentence.
+
+// let str = "Welcome to testyantra";
+
+// let reverseStr = reverseStrBySeparator(str,"");
+
+// function reverseStrBySeparator(a,b) {
+//     return a.split(b).reverse().join(b)
+// }
+// console.log(reverseStr);
+
+//! 56. What is IIFEs
+
+// (function () {
+//     console.log("Hai")
+// })();
+
+//! 57. How to empty an array
+
+// let arr = [10, 20, 30, 40]
+
+//! First way
+// arr = [];
+
+//! Second way
+// arr.length = 0;
+
+//! Third way
+// while (arr.length > 0) {
+//     arr.pop()
+// }
+
+//!  4th way
+// arr.splice(0, arr.length);
+
+// console.log(arr.length);
+// console.log(arr);
+
+//! 58.  For a Palendrome Program
+// let a = "GADAG";
+// let b = "";
+
+// for (i = a.length-1 ; i>=0; i--){
+//      b = b + a.charAt(i);//gadag
+//     //b = b + a[i];//Gadag
+// }
+// console.log(b);
+
+//! 59. How can you combine two arrays into a third Array using spread operator.
+
+// let a = [10, 20, 30, 40];
+// let b = [50, 60, 70, 80];
+// let result = [...a, ...b];
+// console.log(result);
+
+//! 60. How do you sort and reverse an array without changing the original array.
+
+let arr = [10, 20, 30, 40, 50];
+let result = arr.slice().reverse()
+console.log(result);
 
 
 
