@@ -1,7 +1,6 @@
 //! 1.How to define a class with properties and methods in Javascript.
 //! Ans: A class declared with a name which acts as its identifier we can use the name to create new objects using the keyword new.
 
-const { Javascript } = require("@mui/icons-material");
 
 // class Car{
 //     constructor(model, name) {
@@ -108,7 +107,7 @@ const { Javascript } = require("@mui/icons-material");
 // let arr = ["Jan", "Feb", "March", "April", "May", "June", "July"]
 // console.log(arr.sort());
 
-//! 9. How to find the unique values in ana array
+//! 9. How to find the unique values in an array
 
 // let arr = [10, 20, 10, 30, 40, 2, 5, 2, 30];
 
@@ -387,6 +386,41 @@ const { Javascript } = require("@mui/icons-material");
 // Because inbuilt methods in Javascript
 // getElementById
 // getElementByClassName...... so theseare all in camel cases so the js is case insensitive
+
+//! 40. What boolean operators can be used in javascript
+
+//OPerators which always result in either true or false are called as Boolean operators
+
+//! 41. What is the role of break and continue statements
+
+// function test() {
+//     for (let i = 0; i < 10; i++){
+//         if (i == 5) {
+//             break;
+//         }
+//         // console.log(i)//0 1 2 3 4
+//         if (i == 4) {
+//             continue
+//         }
+//         console.log(i);// 0 1 2 3
+//     }
+// }
+// test();
+
+//! 42. Define unescape() and escape() functions
+
+// console.log(escape("Hello-How are-you what's going on?"));//Hello-How%20are-you%20what%27s%20going%20on%3F
+
+// console.log(unescape("Hello-How%20are-you%20what%27s%20going%20on%3F"));
+
+//! 43. What is the length of the array after deletion
+
+let arr = ['a', 'b', 'c', 'd', 'f']
+delete arr[2];
+console.log(arr.length);//5
+ 
+
+
 
 
 
